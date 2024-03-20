@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiskunde</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="{% url 'home' %}" class="logo">
+                        <img src="{% static 'main/images/logo_item.png' %}" alt="">
+                    </a>
+                    <a href="{% url 'home' %}" class="logo__name">Wiskunde</a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="{% url 'contact' %}" class="menu__link">СВЯЗАТЬСЯ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="{% url 'info' %}" class="menu__link">О НАС</a>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">ВХОД</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main__info">
+        <section class="information__article">
+            <div class="top__info-inner">
+                <p class="text__info-title">Немного о себе</p>
+                <div class="top__info-description">
+                    <p class="text__info-description">Я, Хоменко Максим Денисович, выпускник<br>ФМШ №2007, сейчас же
+                        я
+                        учусь в
+                        Московском<br>Политехническом
+                        Университете. С 9 класса я<br>начал заниматься репетиторством, а именно<br>подготовкой к
+                        поступлению в мою
+                        бывшую<br>школу, и у меня это достаточно неплохо<br>получалось. Вплоть до нынешнего времени<br>
+                        мне очень
+                        нравится эта деятельность, поэтому<br>я решил открыть курс, в котором хочу передать<br>свои
+                        знания
+                        и
+                        умения ребятам, тем самым помочь<br>им поступить в нашу прекрасную школу.</p>
+                    <img class="info__founder-img" src="{% static 'main/images/founder.png' %}" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="about__fmsh">
+            <div class="middle__info">
+                <p class="middle__info-title">Про ФМШ №2007</p>
+                <div class="middle__info-container">
+                    <p class="middle__container-text"><strong>K</strong>ак со стороны ученика, который<br>прошёл весь
+                        пусть с 5 по 11
+                        класс и<br>успешно выпустившись, смело
+                        могу<br>заявить, что эта школа кардинально<br>поменяла мою жизнь, именно тут я<br>нашёл своих
+                        близких
+                        друзей, таких<br>же перспективных и амбициозных,<br>которые не любят сидеть на месте,<br>а хотят
+                        двигаться только вперёд и<br>постоянно развиваться. Мне очень<br>приятно, что каждый раз, когда
+                        я<br>
+                        появляюсь в школе, меня всегда<br>встречают с улыбкой и не забывают.</p>
+
+                    <p class="middle__container-text"><strong>А</strong>дминистрация и педагоги, которы<br>там работают
+                        — точно
+                        профессионалы<br>своего дела. С каждым
+                        учителем<br>помимо того, что можно глубоко и во<br>всех тонкостях изучить предмет,<br>можно
+                        просто
+                        подойти и поболтать на<br>отвлечённые от уроков темы. В случае<br>возникновения каких-либо
+                        сложных<br>или
+                        конфликтных ситуаций, все всегда<br>относятся к этому с пониманием и<br>всегда готовы пойти
+                        навстречу.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="underpart__info">
+            <div class="underpart__info-inner">
+                <p class="underpart__info-title">Внеурочная жизнь</p>
+                <div class="underpart__info-container">
+                    <div class="underpart_info-img-right"><img src="{% static 'main/images/telescope_item.png' %}" alt=""></div>
+                    <div class="underpart_info-article">
+                        <p class="underpart_info-text">Помимо внутришкольной жизни,<br>
+                            есть ещё и различная внеурочная<br>
+                            деятельность, различные кружки по<br>
+                            множеству предметов, спортивные<br>
+                            мероприятия, различные экскурсии<br>
+                            по музеям, походы в театр и другие<br>
+                            интересные места. Классные<br>руководители всегда не дают<br>
+                            соскучится своим подопечным и<br>
+                            постоянно предлагают различного<br>
+                            рода активности, выезды, чаепития и<br>
+                            любого другого совместного<br>
+                            времяпрепровождения. </p>
+                    </div>
+                    <div class="underpart_info-img-left"><img src="{% static 'main/images/caculator_item.png' %}" alt=""></div>
+                </div>
+                <div class="underpart_info-img"><img src="{% static 'main/images/deti_dymaut_item.png' %}" alt=""></div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

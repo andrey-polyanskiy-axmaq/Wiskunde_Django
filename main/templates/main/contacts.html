@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiskunde</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="/" class="logo">
+                        <img src="{% static 'main/images/logo_item.png' %}" alt="">
+                    </a>
+                    <a href="/" class="logo__name">Wiskunde</a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">СВЯЗАТЬСЯ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="{% url 'info' %}" class="menu__link">О НАС</a>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">ВХОД</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main__contact">
+        <section class="main__contact-info">
+            <div class="main__contact_container">
+                <div><img src="{% static 'main/images/working_on_laptop_item.png' %}" alt=""></div>
+                <div class="contacts_container contacts_links-name">
+                    <p class="contacts_links">Вконтакте</p>
+                    <p class="contacts_links">Telegram</p>
+                    <p class="contacts_links">WhatsApp</p>
+                </div>
+                <div class=" contacts_container contacts_links-connection">
+                    <p class="contacts_links contact__transition-link"><a href="https://vk.com/wall-72495085_1440562">написать</a></p>
+                    <p class="contacts_links contact__transition-link"><a href="https://t.me/Hoomyachook">@Hoomyachook</a></p>
+                    <p class="contacts_links">+7 920 562 1675</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

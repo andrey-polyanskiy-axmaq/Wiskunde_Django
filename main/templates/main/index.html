@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiskunde</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="{% url 'home' %}" class="logo">
+                        <img src="{% static 'main/images/logo_item.png' %}" alt="{% url 'home' %}">
+                    </a>
+                    <a href="{% url 'home' %}" class="logo__name">Wiskunde</a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="{% url 'contact' %}" class="menu__link">СВЯЗАТЬСЯ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="{% url 'info' %}" class="menu__link">О НАС</a>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">ВХОД</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="top__inner">
+                <img src="{% static 'main/images/background_item.png' %}" alt="">
+                <p class="top__title">
+                    Wiskunde is maklik
+                </p>
+                <p class="top__text">
+                    Именно данный слоган доказывает, что математика, как и любой другой предмет, подвластен
+                    каждому.
+                </p>
+            </div>
+        </section>
+        <section class="middle">
+            <div class="middle__inner">
+                <img src="{% static 'main/images/background_item_middle.png' %}" alt="">
+                <img src="{% static 'main/images/books_item.png' %}" class="middle__image" alt="">
+                <p class="middle__title"><b>Подготовка к поступлению в <br> ФМШ</b> №2007</p>
+                <p class="middle__text">Наш курс основан на темах, которые используются в экзамене при поступлении в
+                    школу. После полного прохождения курса «Математика. Подготовка к поступлению» вы или же ваш
+                    ребёнок
+                    получат необходимые знания и умения для успешного написания вступительных работ.</p>
+            </div>
+        </section>
+        <section class="underpart">
+            <div class="underpart__inner">
+                <div class="underpart__right">
+                    <img class="underpart_image" src="{% static 'main/images/goals_item.png' %}" alt="">
+                    <div class="button__info">
+                        <a href="#" class="info__link">Подробнее о программе</a>
+                    </div>
+                </div>
+                <div class="underpart__middle">
+                    <div class="underpart__description">
+                        <p class="title_description">Задачи</p>
+                        <p class="text__description">Курс включает в себя более 300 разнообразных задач,
+                            составленных
+                            самостоятельно.</p>
+                    </div>
+                    <div class="underpart__description">
+                        <p class="title_description">Живое общение</p>
+                        <p class="text__description">Все занятия будут проходить очно в специализированном для
+                            учебного
+                            процесса месте.</p>
+                    </div>
+                    <div class="underpart__description">
+                        <p class="title_description">Темы занятий</p>
+                        <p class="text__description">На занятиях будут разобраны более 10 различных тем, которые
+                            присутствуют в экзамене.</p>
+                    </div>
+                </div>
+                <div class="underpart__right">
+                    <div class="underpart__description">
+                        <p class="title_description">Видеофиксация</p>
+                        <p class="text__description">В случае отсутствия на занятии, всегда можно пересмотреть
+                            видеозапись, что позволит вам не
+                            упустить всех важных моментов.</p>
+                    </div>
+                    <div class="underpart__description">
+                        <p class="title_description">Домашние задания</p>
+                        <p class="text__description">Занятия больше нацелены на живой и активный формат общения,
+                            нежели
+                            на скучный лекционный
+                            материал.</p>
+                    </div>
+                    <div class="underpart__description">
+                        <p class="title_description">Интерактивы</p>
+                        <p class="text__description">Занятия больше нацелены на живой и активный формат общения,
+                            нежели
+                            на скучный лекционный
+                            материал.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+        </div>
+    </footer>
+
+</body>
+
+</html>
