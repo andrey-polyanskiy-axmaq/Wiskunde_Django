@@ -9,3 +9,5 @@ urlpatterns = [
     path('', include('main.urls')),
     re_path(r'^user/', include('user.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+

@@ -10,6 +10,7 @@
     <img src="{% static 'main/images/logo_item.png' %}" alt="Wiskunde Logo" class="logo">
     <h1>Log-in</h1>
     <p>Please, use the following form to log-in:</p>
+    <p>You wrote wrong password!</p>
     <form action="." method="post">
         {{ form.as_p }}
         {% csrf_token %}
