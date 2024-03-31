@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm
 from django.http import HttpResponse
+from django.shortcuts import redirect
 def index(request):
     pass
 
@@ -14,7 +15,10 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return HttpResponse('Вход выполнен')
+                    if request.user.is_authenticated and request.user.is_superuser:
+                        return redirect('/admin/')
+                    else:
+                        return HttpResponse('Вход выполнен')
                 else:
                     return HttpResponse('Не верный пароль или логин')
             else:
