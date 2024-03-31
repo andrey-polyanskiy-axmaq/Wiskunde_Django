@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffafcd50-9f56-4631-96df-cb7c866d5404" name="Changes" comment="-">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wiskunde.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wiskunde.iml" afterDir="false" />
+    <list default="true" id="ffafcd50-9f56-4631-96df-cb7c866d5404" name="Changes" comment="Upd: login to admin from default page">
+      <change afterPath="$PROJECT_DIR$/wiskunde/main/static/user/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiskunde/main/static/user/images/logo_item.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wiskunde/main/templates/user/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wiskunde/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiskunde/main/templates/main/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/templates/main/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiskunde/main/templates/main/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/templates/main/info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiskunde/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/main/static/main/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/static/user/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/main/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/templates/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/main/templates/user/loginWPS.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/templates/user/loginWPS.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wiskunde/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/user/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wiskunde/wiskunde/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/wiskunde/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -54,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/labs/wiskunde/Wiskunde_Django",
+    "last_opened_file_path": "C:/labs/wiskunde/Wiskunde_Django/wiskunde/main/static/user/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -66,10 +66,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\labs\wiskunde\Wiskunde_Django\wiskunde\main\static\user\images" />
       <recent name="C:\Users\Роман Ковалёв\PycharmProjects\wiskunde\wiskunde\main\static\main" />
       <recent name="C:\Users\Роман Ковалёв\PycharmProjects\wiskunde\wiskunde\main\static\main\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\labs\wiskunde\Wiskunde_Django\wiskunde\main\static\user\css" />
       <recent name="C:\Users\Роман Ковалёв\PycharmProjects\wiskunde\wiskunde\main\templates" />
     </key>
   </component>
@@ -113,7 +115,7 @@
       <workItem from="1711912065011" duration="254000" />
       <workItem from="1711912337208" duration="74000" />
       <workItem from="1711912425314" duration="70000" />
-      <workItem from="1711912508902" duration="1946000" />
+      <workItem from="1711912508902" duration="5583000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <option name="closed" value="true" />
@@ -131,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711105596640</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Upd: login to admin from default page">
+      <option name="closed" value="true" />
+      <created>1711915792549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711915792549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="Upd: login to admin from default page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upd: login to admin from default page" />
   </component>
 </project>
