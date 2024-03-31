@@ -1,0 +1,17 @@
+/* Стили для контейнера */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Стили для контента */
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #4e7fff; /* Синий цвет */
+    color: #ffffff; /* Белый цвет текста */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Добавление тени */
+}
