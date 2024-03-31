@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffafcd50-9f56-4631-96df-cb7c866d5404" name="Changes" comment="-" />
+    <list default="true" id="ffafcd50-9f56-4631-96df-cb7c866d5404" name="Changes" comment="-">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wiskunde.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wiskunde.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/main/templates/main/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/templates/main/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/main/templates/main/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/templates/main/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wiskunde/wiskunde/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/wiskunde/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +32,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/wiskunde" />
     <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -41,12 +54,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/labs/Ya_zaebalcya/wiskunde-django/wiskunde",
+    "last_opened_file_path": "C:/labs/wiskunde/Wiskunde_Django",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,6 +110,10 @@
       <workItem from="1710979531604" duration="450000" />
       <workItem from="1711007412540" duration="18000" />
       <workItem from="1711007841724" duration="16931000" />
+      <workItem from="1711912065011" duration="254000" />
+      <workItem from="1711912337208" duration="74000" />
+      <workItem from="1711912425314" duration="70000" />
+      <workItem from="1711912508902" duration="1946000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <option name="closed" value="true" />
