@@ -9,9 +9,9 @@
 </head>
 <body>
     <a href="/" class="logo">
-                        <img src="{% static 'main/images/logo_item.png' %}" alt="">
-                    </a>
-                    <a href="/" class="logo__name">Wiskunde</a>
+        <img src="{% static 'main/images/logo_item.png' %}" alt="">
+    </a>
+    <a href="/" class="logo__name">Wiskunde</a>
     <h1>User Information</h1>
     <ul>
         <li><strong>Username:</strong> {{ user.username }}</li>
@@ -21,5 +21,6 @@
         <li><strong>Date Joined:</strong> {{ user.date_joined }}</li>
         <li><strong>Last Login:</strong> {{ user.last_login }}</li>
     </ul>
+    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
 </body>
 </html>
