@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffafcd50-9f56-4631-96df-cb7c866d5404" name="Changes" comment="">
+    <list default="true" id="ffafcd50-9f56-4631-96df-cb7c866d5404" name="Changes" comment="Upd: models.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wiskunde/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/user/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wiskunde/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/wiskunde/user/views.py" afterDir="false" />
@@ -132,7 +132,7 @@
       <workItem from="1711912508902" duration="10698000" />
       <workItem from="1712250317310" duration="448000" />
       <workItem from="1712250789250" duration="911000" />
-      <workItem from="1712251729568" duration="983000" />
+      <workItem from="1712251729568" duration="1569000" />
     </task>
     <task id="LOCAL-00001" summary="-">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711970579584</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Upd: models.py">
+      <option name="closed" value="true" />
+      <created>1712253314071</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712253314071</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
     <MESSAGE value="Upd: login to admin from default page" />
     <MESSAGE value="Upd: profile" />
     <MESSAGE value="Upd: logout from profile and auto auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upd: logout from profile and auto auth" />
+    <MESSAGE value="Upd: models.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upd: models.py" />
   </component>
 </project>
