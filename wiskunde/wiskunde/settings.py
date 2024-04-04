@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -129,3 +130,7 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # или 'django.contrib.sessions.backends.cache', в зависимости от ваших настроек
+
+AUTH_USER_MODEL = 'user.CustomUser'

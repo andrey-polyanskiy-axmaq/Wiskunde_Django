@@ -1,24 +1,41 @@
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
 from .forms import LoginForm
-from django.http import HttpResponse
-def index(request):
-    pass
 
-def user_login(request):
+def logout_CustomUser(request):
+    logout(request)
+    return redirect('home')
+
+def index(request):
+    context = {
+        'username': request.CustomUser.CustomUsername,
+        'first_name': request.CustomUser.first_name,
+        'last_name': request.CustomUser.last_name,
+        'email': request.CustomUser.email,
+        'date_joined': request.CustomUser.date_joined,
+        'last_login': request.CustomUser.last_login,
+    }
+    return render(request, 'CustomUser/index.html', context)
+
+def CustomUser_login(request):
+    if request.CustomUser.is_authenticated:
+        return redirect('CustomUserinfo')
     if request.method == 'POST':
         form = LoginForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            user = authenticate(username=cd['username'], password=cd['password'])
-            if user is not None:
-                if user.is_active:
-                    login(request, user)
-                    return HttpResponse('Вход выполнен')
+            CustomUser = authenticate(CustomUsername=cd['CustomUsername'], password=cd['password'])
+            if CustomUser is not None:
+                if CustomUser.is_active:
+                    login(request, CustomUser)
+                    if request.CustomUser.is_superCustomUser:
+                        return redirect('/admin/')
+                    else:
+                        return redirect('CustomUserinfo')
                 else:
-                    return HttpResponse('Не верный пароль или логин')
+                    return render(request, 'CustomUser/loginWPS.html', {'form': form})
             else:
-                return render(request, 'user/loginWPS.html', {'form': form})
+                return render(request, 'CustomUser/loginWPS.html', {'form': form})
     else:
         form = LoginForm()
-    return render(request, 'user/login.html', {'form': form})
+    return render(request, 'CustomUser/login.html', {'form': form})
