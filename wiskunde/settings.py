@@ -133,4 +133,5 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # или 'django.contrib.sessions.backends.cache', в зависимости от ваших настроек
 
-AUTH_USER_MODEL = 'user.CustomUser'
+'''AUTH_USER_MODEL = 'user.CustomUser'
+'''
