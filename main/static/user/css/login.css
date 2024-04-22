@@ -1,0 +1,97 @@
+/* login.css */
+
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Стили для контейнера формы */
+.login-container {
+    width: 400px; /* Ширина контейнера */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый цвет фона */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    width: 80px; /* Задайте размер логотипа по вашему усмотрению */
+    display: block; /* Превращаем изображение в блочный элемент для центрирования */
+    margin: 20px auto; /* Центрируем по горизонтали и добавляем отступ сверху и снизу */
+}
+
+/* Голубой прямоугольник на фоне */
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Располагаем прямоугольник в самом начале контейнера */
+    left: 0; /* Располагаем прямоугольник в самом начале контейнера */
+    right: 0; /* Растягиваем прямоугольник на всю ширину контейнера */
+    bottom: 0; /* Растягиваем прямоугольник на всю высоту контейнера */
+    background-color: #82cdff; /* Голубой цвет фона */
+    border-radius: 5px; /* Скругление углов */
+    z-index: -1; /* Установка z-index ниже, чем у формы */
+    opacity: 0.4; /* Прозрачность прямоугольника */
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Стили для параграфа */
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px; /* Уменьшаем расстояние между параграфами */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Стили для поля ввода */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px); /* Вычитаем padding из ширины */
+    padding: 10px;
+    margin-bottom: 15px; /* Отступ между полями ввода */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Гарантирует, что padding не увеличивает ширину поля */
+}
+
+/* Стили для кнопки */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Синий цвет кнопки */
+    color: #fff; /* Белый текст на кнопке */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold; /* Жирный шрифт для текста на кнопке */
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+/* Стили для сообщений об ошибках */
+.error-message {
+    color: #ff0000; /* Красный цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 16px; /* Размер шрифта для сообщения об ошибке */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    font-weight: bold; /* Жирный шрифт для текста ошибки */
+}

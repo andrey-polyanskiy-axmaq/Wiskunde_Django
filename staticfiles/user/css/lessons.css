@@ -1,0 +1,92 @@
+/* Общие стили для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px; /* Добавлен отступ для всего тела страницы */
+    min-height: 100vh; /* Минимальная высота тела страницы */
+    background-color: #f0f0f0; /* Цвет фона страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стиль для кнопки перехода к профилю */
+.profile-btn {
+    position: fixed; /* Исправлено на fixed для улучшения видимости */
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Повышаем z-index, чтобы кнопка всегда была поверх */
+}
+
+/* Стили для контейнера уроков */
+.lessons-container {
+    width: 100%;
+    max-width: 800px; /* Ширина контейнера */
+    margin: 20px auto; /* Автоматические отступы слева и справа */
+}
+
+/* Стили для уроков */
+.lesson {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для кнопок уроков */
+.lesson-btn {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+/* Стили для содержимого урока и формы загрузки файла */
+.lesson-content, .lesson-upload-form {
+    padding: 20px;
+    display: none; /* Изначально скрыто */
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Стили для активного содержимого урока */
+.lesson-content.active, .lesson-upload-form.active {
+    display: flex; /* Отображается при активации */
+}
+
+/* Стили для вставки YouTube плеера */
+.youtube-player iframe {
+    width: 100%;
+    height: 300px; /* Уменьшена высота для адаптации */
+    border-radius: 10px; /* Добавлены скругленные углы */
+    margin-bottom: 20px; /* Добавлен нижний отступ */
+}
+
+/* Стили для формы загрузки файла */
+.lesson-upload-form {
+    border-top: 1px solid #eee; /* Граница сверху для разделения от содержимого урока */
+    padding-top: 20px; /* Отступ сверху */
+}
+
+.lesson-upload-form input[type="file"] {
+    margin-bottom: 10px; /* Отступ для поля выбора файла */
+}
+
+.lesson-upload-form button[type="submit"] {
+    background-color: #007bff; /* Зеленый цвет кнопки отправки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

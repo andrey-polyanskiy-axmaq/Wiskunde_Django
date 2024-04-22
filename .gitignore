@@ -1,0 +1,12 @@
+# Игнорировать виртуальное окружение Python
+
+# Игнорировать настройки проекта для IDE IntelliJ IDEA
+/.idea/
+
+
+/media/
+
+/venv/Include/
+/venv/Lib/
+/venv/Scripts/
+/venv/pyvenv.cfg/

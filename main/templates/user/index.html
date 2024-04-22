@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Профиль</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'user/css/profile.css' %}">
+</head>
+<body>
+    <a href="/" class="logo">
+        <img src="{% static 'main/images/logo_item.png' %}" alt="">
+    </a>
+    <a href="/" class="logo__name">Wiskunde</a>
+    <h1>User Information</h1>
+    <ul>
+        <li><strong>Username:</strong> {{ user.username }}</li>
+        <li><strong>First Name:</strong> {{ user.first_name }}</li>
+        <li><strong>Last Name:</strong> {{ user.last_name }}</li>
+        <li><strong>Email:</strong> {{ user.email }}</li>
+        <li><strong>Date Joined:</strong> {{ user.date_joined }}</li>
+        <li><strong>Last Login:</strong> {{ user.last_login }}</li>
+    </ul>
+    <a href="{% url 'profile_edit' %}" class="button">Редактировать профиль</a>
+    <a href="{% url 'lessonsuser' %}" class="button">Уроки</a>
+    <a href="{% url 'schedule' %}" class="button">Расписание</a>
+    <a href="{% url 'logout' %}" class="logout-button">Выйти из аккаунта</a>
+</body>
+</html>

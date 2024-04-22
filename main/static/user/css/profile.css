@@ -1,0 +1,116 @@
+/* profile.css */
+
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стили для логотипа */
+.logo {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.logo__name {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Стили для заголовка */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для списка информации о пользователе */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Стили для кнопки выхода */
+.logout-button,
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout-buttonn {
+    display: block; /* Изменено с inline-block на block для работы margin auto */
+    padding: 10px 20px;
+    margin: 0 auto; /* Автоматический отступ для центрирования */
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content; /* Задает ширину содержимому кнопки */
+}
+
+.logout-button:hover,
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для кнопки добавления уроков */
+.add-lessons-btn {
+    display: block;
+    width: 150px; /* Задаем ширину кнопки */
+    margin: 20px auto; /* Отступы сверху и снизу, автоматическое выравнивание по центру */
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff; /* Синий цвет кнопки */
+    color: #fff; /* Белый цвет текста */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+}
+
+.add-lessons-btn:hover {
+    background-color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+/* Стили для кнопки добавления уроков */
+.add-lessons-btn {
+    display: block;
+    width: 150px; /* Задаем ширину кнопки */
+    margin: 20px auto; /* Отступы сверху и снизу, автоматическое выравнивание по центру */
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff; /* Синий цвет кнопки */
+    color: #fff; /* Белый цвет текста */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+}
+
+.add-lessons-btn:hover {
+    background-color: #0056b3; /* Темно-синий цвет при наведении */
+}
