@@ -60,6 +60,20 @@ ul li {
     cursor: pointer;
 }
 
+.logout-buttonn {
+    display: block; /* Изменено с inline-block на block для работы margin auto */
+    padding: 10px 20px;
+    margin: 0 auto; /* Автоматический отступ для центрирования */
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content; /* Задает ширину содержимому кнопки */
+}
+
 .logout-button:hover,
 .button:hover {
     background-color: #0056b3;

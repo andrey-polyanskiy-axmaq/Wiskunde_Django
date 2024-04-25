@@ -12,8 +12,8 @@ class ThemeFilterForm(forms.Form):
     )
 
 class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    username = forms.CharField(label='Логин или email', widget=forms.TextInput(attrs={'placeholder': 'Логин или email'}))
+    password = forms.CharField(label='Пароль', widget=forms.PasswordInput)
 
 
 class ProfileEditForm(UserChangeForm):

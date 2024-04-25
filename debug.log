@@ -3411,3 +3411,35 @@ Logging out user: t
 Logging out user: 
 2024-04-20 20:11:32,672 - auth_backend - DEBUG - Logging out user: 
 2024-04-20 20:15:13,980 - django.utils.autoreload - INFO - C:\labs\newFile\app\user\views.py changed, reloading.
+2024-04-22 14:47:51,433 - django.request - WARNING - Not Found: /favicon.ico
+2024-04-22 14:48:05.519378 Authenticating user: t
+2024-04-22 14:48:05,519 - auth_backend - DEBUG - 2024-04-22 14:48:05.519378 Authenticating user: t
+2024-04-22 14:48:07.372304 User authenticated: t
+2024-04-22 14:48:07,372 - auth_backend - DEBUG - 2024-04-22 14:48:07.372304 User authenticated: t
+Index page accessed by user: t
+2024-04-22 14:48:07,424 - auth_backend - DEBUG - Index page accessed by user: t
+Index page accessed by user: t
+2024-04-22 14:48:11,839 - auth_backend - DEBUG - Index page accessed by user: t
+Index page accessed by anonymous user
+2024-04-22 14:48:14,955 - auth_backend - DEBUG - Index page accessed by anonymous user
+Logging out user: t
+2024-04-22 14:48:23,411 - auth_backend - DEBUG - Logging out user: t
+2024-04-26 00:09:53,441 - django.request - WARNING - Not Found: /favicon.ico
+2024-04-26 00:10:02.583937 Authenticating user: t
+2024-04-26 00:10:02,583 - auth_backend - DEBUG - 2024-04-26 00:10:02.583937 Authenticating user: t
+2024-04-26 00:10:03.404106 User authenticated: t
+2024-04-26 00:10:03,404 - auth_backend - DEBUG - 2024-04-26 00:10:03.404106 User authenticated: t
+Index page accessed by user: t
+2024-04-26 00:10:03,444 - auth_backend - DEBUG - Index page accessed by user: t
+Index page accessed by user: t
+2024-04-26 00:10:23,013 - auth_backend - DEBUG - Index page accessed by user: t
+Index page accessed by user: t
+2024-04-26 00:10:30,696 - auth_backend - DEBUG - Index page accessed by user: t
+2024-04-26 00:20:32,458 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-26 00:21:42,995 - django.utils.autoreload - INFO - C:\labs\newFile\app\user\forms.py changed, reloading.
+User has been authenticated by t
+2024-04-26 00:22:24,348 - auth_backend - DEBUG - User has been authenticated by t
+Index page accessed by user: t
+2024-04-26 00:22:24,365 - auth_backend - DEBUG - Index page accessed by user: t
+Logging out user: t
+2024-04-26 00:22:27,153 - auth_backend - DEBUG - Logging out user: t

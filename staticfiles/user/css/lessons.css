@@ -1,10 +1,10 @@
 /* Общие стили для всей страницы */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 20px; /* Добавлен отступ для всего тела страницы */
-    min-height: 100vh; /* Минимальная высота тела страницы */
-    background-color: #f0f0f0; /* Цвет фона страницы */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,31 +12,41 @@ body {
 
 /* Стиль для кнопки перехода к профилю */
 .profile-btn {
-    position: fixed; /* Исправлено на fixed для улучшения видимости */
+    position: fixed;
     top: 20px;
     left: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000; /* Повышаем z-index, чтобы кнопка всегда была поверх */
+    z-index: 1000;
+    text-decoration: none;
 }
 
 /* Стили для контейнера уроков */
 .lessons-container {
     width: 100%;
-    max-width: 800px; /* Ширина контейнера */
-    margin: 20px auto; /* Автоматические отступы слева и справа */
+    max-width: 960px;
+    margin-top: 50px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
 }
 
-/* Стили для уроков */
+/* Стили для каждого урока */
 .lesson {
     margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.lesson:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 /* Стили для кнопок уроков */
@@ -47,46 +57,152 @@ body {
     width: 100%;
     text-align: left;
     border: none;
-    border-radius: 10px 10px 0 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     cursor: pointer;
 }
 
-/* Стили для содержимого урока и формы загрузки файла */
-.lesson-content, .lesson-upload-form {
+.lesson-btn:hover {
+    transform: scale(1.01); /* Увеличение размера при наведении */
+    transition: transform 0.3s ease; /* Добавление плавности при изменении размера */
+}
+
+.lesson-content {
     padding: 20px;
-    display: none; /* Изначально скрыто */
-    flex-direction: column;
-    align-items: stretch;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
 }
 
-/* Стили для активного содержимого урока */
-.lesson-content.active, .lesson-upload-form.active {
-    display: flex; /* Отображается при активации */
+.lesson-content.active {
+    display: block;
 }
 
-/* Стили для вставки YouTube плеера */
-.youtube-player iframe {
+.youtube-player {
+    position: relative;
     width: 100%;
-    height: 300px; /* Уменьшена высота для адаптации */
-    border-radius: 10px; /* Добавлены скругленные углы */
-    margin-bottom: 20px; /* Добавлен нижний отступ */
+    padding-bottom: 56.25%; /* Задаем соотношение ширины к высоте 16:9 */
 }
 
-/* Стили для формы загрузки файла */
-.lesson-upload-form {
-    border-top: 1px solid #eee; /* Граница сверху для разделения от содержимого урока */
-    padding-top: 20px; /* Отступ сверху */
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
 }
 
-.lesson-upload-form input[type="file"] {
-    margin-bottom: 10px; /* Отступ для поля выбора файла */
+/* Стили для кнопки "Выберите файл" и зоны drag-and-drop */
+.file-input {
+    position: relative; /* Изменено на relative */
+    width: 100%;
+    padding: 10px;
+    top: -10px; /* Изменено на -10px */
+    left: -10px; /* Изменено на -10px */
+    margin-top: 10px;
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    background: #f8f9fa;
+    text-align: center;
+    transition: border-color 0.3s;
+    overflow: hidden;
 }
 
-.lesson-upload-form button[type="submit"] {
-    background-color: #007bff; /* Зеленый цвет кнопки отправки */
+.file-input:hover {
+    border-color: #0056b7;
+}
+
+.file-input input[type='file'] {
+    position: absolute; /* Позиционирование изменено на absolute */
+    width: calc(100% + 20px); /* Изменено на 100% + 20px */
+    height: calc(100% + 20px); /* Изменено на 100% + 20px */
+    top: -10px; /* Изменено на -10px */
+    left: -10px; /* Изменено на -10px */
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-label {
+    font-size: 16px;
+    color: #007bff;
+    cursor: pointer;
+    display: block; /* Добавлено */
+    padding: 10px; /* Добавлено */
+}
+
+/* Стили для кнопок действий (скачать, отправить) */
+.button, .button-link {
+    padding: 10px 15px;
+    background-color: #007bff;  /* Яркий синий цвет */
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover, .button-link:hover {
+    background-color: #0056b7; /* Темно-синий при наведении */
+}
+
+.filter-form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Светло-серый фон */
+    border: 1px solid #ddd; /* Серебристая граница */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Тень для добавления глубины */
+    width: 50%; /* Еще более уменьшенная ширина формы */
+    max-width: 400px; /* Еще более уменьшенная максимальная ширина */
+}
+
+.filter-form p {
+    margin: 10px 0;
+    text-align: center; /* Центрирование текста */
+    color: #333; /* Темно-серый цвет текста */
+}
+
+.filter-form .button {
+    display: block; /* Блочный элемент */
+    width: 100%; /* Ширина кнопки */
+    padding: 10px 0; /* Паддинг сверху и снизу */
+    margin-top: 10px; /* Отступ сверху */
+    background-color: #007bff; /* Синий цвет */
+    color: white; /* Белый текст */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center; /* Центрирование текста на кнопке */
+}
+
+.filter-form .button:hover {
+    background-color: #0056b7; /* Темно-синий при наведении */
+}
+
+.filter-form select {
+    width: 100%; /* Ширина выпадающего списка */
+    padding: 12px; /* Увеличенный паддинг для более крупного вида */
+    border-radius: 5px;
+    border: 1px solid #007bff; /* Более толстая и яркая граница */
+    background-color: white; /* Белый фон */
+    margin-top: 5px; /* Отступ сверху */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Более выраженная тень */
+    appearance: none; /* Убрать стандартное оформление */
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-form select:hover {
+    border-color: #0056b7; /* Изменение цвета границы при наведении */
+}
+
+.filter-form select:focus {
+    box-shadow: 0 0 8px rgba(0,123,255,0.5); /* Световой эффект при фокусировке */
 }
