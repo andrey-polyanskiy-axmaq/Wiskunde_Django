@@ -74,12 +74,8 @@ WSGI_APPLICATION = 'wiskunde.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wiskunde',                     # Имя вашей базы данных
-        'USER': 'postgres',                     # Ваш пользователь базы данных
-        'PASSWORD': 'qwer',                     # Пароль пользователя
-        'HOST': 'd36828e1b9c3.vps.myjino.ru',                    # Адрес сервера базы данных
-        'PORT': '5430',                         # Порт, который использует ваш PostgreSQL контейнер
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

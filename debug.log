@@ -3466,3 +3466,4 @@ Index page accessed by anonymous user
 2024-04-28 00:04:25,592 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
 2024-04-28 00:05:15,886 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
 2024-04-28 00:09:24,820 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-28 15:51:00,426 - django.request - WARNING - Not Found: /favicon.ico

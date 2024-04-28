@@ -15,8 +15,8 @@ body{
 
 /* Стили для контейнера формы */
 .login-container {
-    width: 20vw; /* Ширина контейнера */
-    padding: 5vw;
+    width: 10vw; /* Ширина контейнера */
+    padding: 7vw;
     background-color: rgba(255, 255, 255, 0.8); /* Прозрачный белый цвет фона */
     border: 1px solid #ddd;
     border-radius: 30px;
@@ -39,8 +39,8 @@ input[type="password"] {
 
 /* Стили для кнопки */
 input[type="submit"] {
-    width: 80%;
-    padding: 15px;
+    width: 50%;
+    padding: 10px;
     background-color: rgba(28, 78, 176, 1); /* Синий цвет кнопки */
     color: #fff; /* Белый текст на кнопке */
     border: none;
@@ -49,9 +49,9 @@ input[type="submit"] {
     font-weight: bold; /* Жирный шрифт для текста на кнопке */
     font-size: 25px;
     transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
-    position: relative;
-    left: 10%;
-
+    position: absolute;
+    left: 25%;
+    top: 85%;
 }
 
 /* Стили для сообщений об ошибках */
