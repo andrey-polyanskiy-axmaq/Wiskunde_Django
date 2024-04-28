@@ -3443,3 +3443,26 @@ Index page accessed by user: t
 2024-04-26 00:22:24,365 - auth_backend - DEBUG - Index page accessed by user: t
 Logging out user: t
 2024-04-26 00:22:27,153 - auth_backend - DEBUG - Logging out user: t
+Index page accessed by anonymous user
+2024-04-26 00:24:01,114 - auth_backend - DEBUG - Index page accessed by anonymous user
+2024-04-26 00:33:02,790 - django.request - WARNING - Not Found: /favicon.ico
+2024-04-27 23:45:21,493 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:45:58,938 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:47:18,693 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:48:47,588 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:49:00,151 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:51:54,669 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:53:08,360 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:53:08,520 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:54:47.465439 Authenticating user: r0mch1ck
+2024-04-27 23:54:47,465 - auth_backend - DEBUG - 2024-04-27 23:54:47.465439 Authenticating user: r0mch1ck
+2024-04-27 23:54:49.640351 User authenticated: r0mch1ck
+2024-04-27 23:54:49,640 - auth_backend - DEBUG - 2024-04-27 23:54:49.640351 User authenticated: r0mch1ck
+2024-04-27 23:54:51,365 - django.request - WARNING - Not Found: /favicon.ico
+2024-04-27 23:56:15,406 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-27 23:56:15,453 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-28 00:03:25,042 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-28 00:03:25,055 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-28 00:04:25,592 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-28 00:05:15,886 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
+2024-04-28 00:09:24,820 - django.utils.autoreload - INFO - C:\labs\newFile\app\wiskunde\settings.py changed, reloading.
