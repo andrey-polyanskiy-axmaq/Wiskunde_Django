@@ -1,16 +1,3 @@
-from django.urls import path, include
-from . import views
-from django.contrib import admin
-from django.conf import settings
-from django.conf.urls.static import static
-
-
-urlpatterns = [
-   path('', views.index, name='home'),
-   path('info', views.info, name='info'),
-   path('contacts', views.contacts, name='contact')
-]
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:712a6f65feacf920eef4729417438a00a3b888529b9bedf4317b1a87598eb2a3
+size 324

@@ -1,26 +1,3 @@
-from django import forms
-from django.contrib.auth.forms import UserChangeForm
-from .models import CustomUser
-from .models import Themes
-
-class ThemeFilterForm(forms.Form):
-    theme = forms.ModelChoiceField(
-        queryset=Themes.objects.all(),
-        required=False,
-        label='Тема',
-        empty_label="Нет темы"
-    )
-
-class LoginForm(forms.Form):
-    username = forms.CharField(label='Логин или email', widget=forms.TextInput(attrs={'placeholder': 'Логин или email'}))
-    password = forms.CharField(label='Пароль', widget=forms.PasswordInput)
-
-
-class ProfileEditForm(UserChangeForm):
-    class Meta(UserChangeForm.Meta):
-        model = CustomUser
-        fields = ('username', 'first_name', 'last_name', 'email', 'password', 'birth_date')
-
-class LessonFeedbackForm(forms.Form):
-    file = forms.FileField(label='Прикрепить файл с домашним заданием')
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:de9c83924bf9ed071acda739e81ef146aae4c806d13f8de28146afadce902995
+size 1044
