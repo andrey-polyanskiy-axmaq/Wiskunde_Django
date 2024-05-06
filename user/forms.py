@@ -1,31 +1,3 @@
-from django import forms
-from django.contrib.auth.forms import UserChangeForm
-from .models import CustomUser
-from .models import Themes
-
-class ThemeFilterForm(forms.Form):
-    theme = forms.ModelChoiceField(
-        queryset=Themes.objects.all(),
-        required=False,
-        label='Тема',
-        empty_label="Нет темы"
-    )
-
-class LoginForm(forms.Form):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        # Override field labels here
-        self.fields['username'].label = 'Email или Логин'
-        self.fields['password'].label = 'Пароль'
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
-
-
-class ProfileEditForm(UserChangeForm):
-    class Meta(UserChangeForm.Meta):
-        model = CustomUser
-        fields = ('username', 'first_name', 'last_name', 'email', 'password', 'birth_date')
-
-class LessonFeedbackForm(forms.Form):
-    file = forms.FileField(label='Прикрепить файл с домашним заданием')
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:7566ad4526f843fea634907e6b82360136ac1c74fdc49f97424022f7e8f09ed1
+size 1152
