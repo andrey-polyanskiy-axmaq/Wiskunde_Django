@@ -1,3 +1,88 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b96e23100c2eb7119eee9749aa9805b9bde14ec13a98fb7c4bb95515cb8814cf
-size 4613
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/icon.png' %}" type="image/x-icon">
+
+    <title>Wiskunde</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="/" class="logo_mobile"><img src="{% static 'main/images/logo_mobile.png' %}" alt=""></a>
+                    <a href="/" class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+                    <ul class="menu menu__list--open">
+                        <li class="menu__close">
+                            <button class="menu__close-btn">
+                                <img src="{% static 'main/images/cross.svg' %}" alt="">
+                            </button>
+                        </li>
+                        <li class="menu__list"><a href="{% url 'home' %}" class="menu__link">На главную</a></li>
+                        <li class="menu__list"><a href="{% url 'info' %}" class="menu__link">О нас</a></li>
+                        <li class="menu__list"><a href="{% url 'login' %}" class="menu__link">Вход</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="contact_main">
+            <section class="contact_container">
+                <div class="container">
+                    <div class="contact_inner">
+                        <div class="contact-left_part">
+                            <img class="contact_human-img" src="{% static 'main/images/contact_human.png' %}" alt="">
+                        </div>
+                        <div class="contact-center-part">
+                            <img class="contact_arrow-img" src="{% static 'main/images/contact_arrow.png' %}" alt="">
+                        </div>
+                        <div class="contact-right_part">
+                            <p class="contact-right_part-text">Привет! Если у тебя остались вопросы, ты можешь задать их по этим ссылкам:</p>
+                            <div class="contact_message-container">
+                                <div><a href="https://t.me/MathWiskunde"><img class="contact_tg-img" src="{% static 'main/images/contact_tg.png' %}" alt=""></a></div>
+                                <div><a href="https://vk.com/mathwiskunde"><img class="contact_vk-img" src="{% static 'main/images/contact_vk.png' %}" alt=""></a></div>
+                                <div><a href="tel:+79254584777"><img class="contact_whatsapp-img" src="{% static 'main/images/contact_whatsapp.png' %}" alt=""></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="index__footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-inner-container">
+                        <div class="footer-contact">
+                            <p class="footer-title">Контакты</p>
+                            <p class="footer-text">8 (925) 458-47-77</p>
+                            <p class="footer-text">manager@wiskunde.ru</p>
+                        </div>
+                        <div class="footer-links">
+                            <p class="footer-title">Ссылки</a></p>
+                            <p class="footer-text"><a href="https://vk.com/mathwiskunde">vk.com/mathwiskunde</a></p>
+                            <p class="footer-text"><a href="https://t.me/MathWiskunde">@MathWiskunde</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-line"></div>
+                    <p class="copyright">© 2024</p>
+                </div>
+            </div>
+        </footer>
+        <a href="https://vk.com/im?media=&sel=-224857793" target="_blank" rel="nofollow">
+            <span class="whatsapp-button"></span>
+        </a>
+    </div>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+
+</html>

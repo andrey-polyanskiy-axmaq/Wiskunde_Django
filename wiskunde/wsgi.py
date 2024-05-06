@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aede872d028d33c3f12135d71af940af79be2bcbefcb0061cfbe61ef4000652c
-size 409
+"""
+WSGI config for wiskunde project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/5.0/howto/deployment/wsgi/
+"""
+
+import os
+
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'wiskunde.settings')
+
+application = get_wsgi_application()

@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:14708cea820ddc6004026dfda24992ce8fac5ca646ef71c0e1574e1bdb0a095c
-size 3218
+{% load static template_helpers %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занятия</title>
+    <link rel="stylesheet" href="{% static 'user/css/lessons.css' %}">
+</head>
+<body>
+<a href="{% url 'userinfo' %}" class="profile-btn button">Назад в профиль</a>
+<form method="get" action="." class="filter-form">
+    {{ form.as_p }}
+    <button type="submit" class="button">Фильтровать</button>
+</form>
+<div class="lessons-container">
+    {% for lesson in lessons %}
+        <div class="lesson">
+            <button class="lesson-btn button">{{ lesson.name }}</button>
+            <div class="lesson-content">
+                <p>{{ lesson.description }}</p>
+                <div class="youtube-player">
+                    <iframe src="https://www.youtube.com/embed/{{ lesson.ref|slice:"32:" }}" allowfullscreen></iframe>
+                </div>
+                <a href="{% url 'download_lesson_file_user' lesson.file.name %}" class="button-link">Скачать файл урока</a>
+                <p>Дата публикации: {{ lesson.date }}</p>
+                <p>Описание: {{ lesson.Description }}</p>
+                <form method="post" action="{% url 'upload_feedback' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="lesson_id" value="{{ lesson.id }}">
+                    <div class="file-input">
+                        <label for="file-{{ lesson.id }}" class="file-label">Перетащите файл сюда или кликните для выбора</label>
+                        <input type="file" id="file-{{ lesson.id }}" name="file" onchange="updateFileName(this)">
+                        <span id="file-name-{{ lesson.id }}"></span>
+                    </div>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+                {% with feedback=lessons_feedback|get_item:lesson.id %}
+                    {% if feedback %}
+                        {% if feedback.file_name %}
+                            <p>Загруженный файл: <a href="{% url 'download_lesson_file_user' feedback.file_name %}" class="button-link">{{ feedback.file_name }}</a></p>
+                        {% endif %}
+                        {% if feedback.feedback != None %}
+                            <p>Фидбек: {{ feedback.feedback }}</p>
+                            <p>Оценка: {{ feedback.mark }}</p>
+                        {% endif %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+<script src="{% static 'user/js/lessons.js' %}"></script>
+<script>
+    function updateFileName(input) {
+        var fileNameLabel = document.getElementById('file-name-' + input.id.split('-')[1]);
+        if (input.files.length > 0) {
+            var fileName = input.files[0].name;
+            fileNameLabel.textContent = "Выбран файл: " + fileName;
+        } else {
+            fileNameLabel.textContent = "";
+        }
+    }
+</script>
+</body>
+</html>

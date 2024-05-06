@@ -1,3 +1,146 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a751b28ca3877d0c1435442fcb71731a9894be5e770c876b5033c6fab698490a
-size 10454
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/icon.png' %}" type="image/x-icon">
+
+    <title>Wiskunde</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <button class="menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <a href="/" class="logo_mobile"><img src="{% static 'main/images/logo_mobile.png' %}" alt=""></a>
+                    <a href="/" class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+                    <ul class="menu menu__list--open">
+                        <li class="menu__close">
+                            <button class="menu__close-btn">
+                                <img src="{% static 'main/images/cross.svg' %}" alt="">
+                            </button>
+                        </li>
+                        <li class="menu__list"><a href="{% url 'home' %}" class="menu__link">На главную</a></li>
+                        <li class="menu__list"><a href="{% url 'contact' %}" class="menu__link">Контакты</a></li>
+                        <li class="menu__list"><a href="{% url 'login' %}" class="menu__link">Вход</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="information_main">
+            <section class="information_top">
+                <div class="container">
+                    <div class="top_information-inner">
+                        <h1 class="title-information">Немного о себе</h1>
+                        <div class="top_inner-grid">
+                            <div class="top_information-text-container">
+                                <p class="top_information-text">Я, Хоменко Максим Денисович, выпускник ФМШ 2007 на
+                                    данный момент учусь в Московском
+                                    Политехническом Государственном университете, по совместительству являюсь педагогом
+                                    дополнительного образование в 2007 школе, а именно веду ВМШ, или же как многие его
+                                    ещё называют «Пятничный кружок». Поступив, отучившись все 7 лет и выпустившись, я
+                                    решил создать свой собственный курс для подготовки к поступлению в ФМШ 2007. До
+                                    этого я занимался репетиторством на протяжении 2 лет, в котором также готовил детей
+                                    к поступлению, которые смогли с лёгкостью пройти вступительные экзамены и на данный
+                                    момент без всяких трудностей учатся в школе.</p>
+                            </div>
+                            <div class="top_information-image">
+                                <img class="information_owner-image" src="{% static 'main/images/information_owner.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="description_achive-information">
+                <div class="container">
+                    <div class="description_achive-information-inner">
+                        <div class="description_achive-top">
+                            <div class="description_title-container">
+                                <h1 class="description-title">Мой путь</h1>
+                            </div>
+                            <div class="stars_information-container"><img class="stars-information"
+                                    src="{% static 'main/images/stars-information.png' %}" alt=""></div>
+                        </div>
+                        <div class="description_achive-grid">
+                            <div class="description_achive-part">
+                                <p class="description_achive-part-text">Как со стороны ученика, который прошёл весь
+                                    пусть с 5 по 11 класс и успешно
+                                    выпустившись, смело могу заявить, что эта школа кардинально поменяла мою жизнь,
+                                    именно тут я нашёл своих близких друзей, таких же перспективных и амбициозных,
+                                    которые не любят сидеть на месте, а хотят двигаться только вперёд и постоянно
+                                    развиваться. Мне очень приятно, что каждый раз, когда я появляюсь в школе, меня
+                                    всегда встречают с улыбкой и не забывают.</p>
+                            </div>
+                            <div class="description_achive-part">
+                                <p class="description_achive-part-text">Администрация и педагоги, которые там работают —
+                                    точно профессионалы своего дела. С
+                                    каждым учителем помимо того, что можно глубоко и во всех тонкостях изучить предмет,
+                                    можно просто подойти и поболтать на отвлечённые от уроков темы. В случае
+                                    возникновения каких-либо сложных или конфликтных ситуаций, все всегда относятся к
+                                    этому с пониманием и всегда готовы пойти навстречу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="extracurricular_life-information">
+                <div class="extracurricular_life-information-inner">
+                    <h1 class="extracurricular_life-title">Внеурочная жизнь</h1>
+                    <div class="extracurricular_life-container">
+                        <div class="extracurricular_life-container-inner">
+                            <p class="extracurricular_life-container-text">
+                                Помимо внутришкольной жизни, есть ещё и различная внеурочная деятельность, различные
+                                кружки по множеству предметов, спортивные мероприятия, различные экскурсии по
+                                музеям, походы в театр и другие интересные места. Классные руководители всегда не
+                                дают соскучится своим подопечным и постоянно предлагают различного рода активности,
+                                выезды, чаепития и любого другого совместного времяпрепровождения. </p>
+                        </div>
+                        <div class="extracurricular_life-container-image"><img class="extracurricular_life-image"
+                                src="{% static 'main/images/information_arrow.png' %}" alt=""></div>
+                    </div>
+                </div>
+                <div class="extracurricular_life-graphic">
+                    <div class="extracurricular_life-graphic-top"><img class="extracurricular_life-graphic-icon"
+                            src="{% static 'main/images/information_sticks.png' %}" alt=""></div>
+                    <div class="extracurricular_life-graphic-bottom"><img class="extracurricular_life-graphic-image"
+                            src="{% static 'main/images/information_children.png' %}" alt=""></div>
+                </div>
+            </section>
+        </main>
+        <footer class="index__footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-inner-container">
+                        <div class="footer-contact">
+                            <p class="footer-title">Контакты</p>
+                            <p class="footer-text">8 (925) 458-47-77</p>
+                            <p class="footer-text">manager@wiskunde.ru</p>
+                        </div>
+                        <div class="footer-links">
+                            <p class="footer-title">Ссылки</a></p>
+                            <p class="footer-text"><a href="https://vk.com/mathwiskunde">vk.com/mathwiskunde</a></p>
+                            <p class="footer-text"><a href="https://t.me/MathWiskunde">@MathWiskunde</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-line"></div>
+                    <p class="copyright">© 2024</p>
+                </div>
+            </div>
+        </footer>
+        <a href="https://vk.com/im?media=&sel=-224857793" target="_blank" rel="nofollow">
+            <span class="whatsapp-button"></span>
+        </a>
+    </div>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+
+</html>

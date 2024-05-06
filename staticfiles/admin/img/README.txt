@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ea3793254f54888bab1d9d89ca26b3a227a87d95321e8d3ee72d263e63be299
-size 319
+All icons are taken from Font Awesome (http://fontawesome.io/) project.
+The Font Awesome font is licensed under the SIL OFL 1.1:
+- https://scripts.sil.org/OFL
+
+SVG icons source: https://github.com/encharm/Font-Awesome-SVG-PNG
+Font-Awesome-SVG-PNG is licensed under the MIT license (see file license
+in current folder).

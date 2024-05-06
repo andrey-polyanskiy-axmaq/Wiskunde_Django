@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:126b565894a6656b0bb00a06ac1684ca22710af4bcbe5c43f38ba9109d2db70c
-size 240
+from django.shortcuts import render
+
+
+def index(request):
+    return render(request, 'main/index.html')
+def info(request):
+    return render(request, 'main/info.html')
+def contacts(request):
+    return render(request, 'main/contacts.html')

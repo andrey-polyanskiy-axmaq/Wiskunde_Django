@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91adaf82448a6d528d3354d45770b49696807c5f2370e2a3a5c2c9710054947f
-size 401
+const menuBtn = document.querySelector('.menu__btn');
+const menuClose = document.querySelector('.menu__close');
+const menuList = document.querySelector('.menu');
+
+menuList.classList.remove('menu__list--open')
+
+menuBtn.addEventListener('click', () => {
+    menuList.classList.add('menu__list--open')
+});
+
+menuClose.addEventListener('click', () => {
+    menuList.classList.remove('menu__list--open')
+});
