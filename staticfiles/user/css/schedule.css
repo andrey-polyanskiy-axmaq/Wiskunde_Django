@@ -1,3 +1,72 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a2f06d0a9ed69f19837f0ea3585ce395c2e713f8f3f8fe89cec78c7d028fee5
-size 1735
+/* Общие стили для всей страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стиль для заголовка страницы */
+h1 {
+    color: #0056b3; /* Гармонирует с кнопкой профиля */
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы расписаний */
+table {
+    width: 90%;
+    max-width: 960px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #e1e4e8;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #0056b3;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+/* Стиль для кнопки "Назад" */
+.back-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Яркий синий цвет */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b7; /* Темно-синий при наведении */
+}
+
+/* Дополнительные стили для улучшения читаемости и визуального восприятия */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.today-highlight {
+    background-color: #ffc107; /* Изменил на яркий желтый для лучшей видимости */
+}

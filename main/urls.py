@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e64be73e1cac28e3aacaa12edda7f0307b64ad5edad45caedc4b3354700f8d4
-size 453
+from django.urls import path, include
+from . import views
+from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+
+
+urlpatterns = [
+   path('', views.index, name='home'),
+   path('info', views.info, name='info'),
+   path('contacts', views.contacts, name='contact'),
+   path('yearcourse', views.year_course, name='yearcourse'),
+   path('summercourse', views.summer_course, name='summercourse'),
+]
+
+
+
+

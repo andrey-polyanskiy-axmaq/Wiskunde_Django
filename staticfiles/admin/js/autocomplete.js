@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:380a924e21d99d3599cc9284bce9be675b5d0252e33d65fd8caa589261f43b3a
-size 1060
+'use strict';
+{
+    const $ = django.jQuery;
+
+    $.fn.djangoAdminSelect2 = function() {
+        $.each(this, function(i, element) {
+            $(element).select2({
+                ajax: {
+                    data: (params) => {
+                        return {
+                            term: params.term,
+                            page: params.page,
+                            app_label: element.dataset.appLabel,
+                            model_name: element.dataset.modelName,
+                            field_name: element.dataset.fieldName
+                        };
+                    }
+                }
+            });
+        });
+        return this;
+    };
+
+    $(function() {
+        // Initialize all autocomplete widgets except the one in the template
+        // form used when a new formset is added.
+        $('.admin-autocomplete').not('[name*=__prefix__]').djangoAdminSelect2();
+    });
+
+    document.addEventListener('formset:added', (event) => {
+        $(event.target).find('.admin-autocomplete').djangoAdminSelect2();
+    });
+}

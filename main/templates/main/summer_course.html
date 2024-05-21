@@ -1,3 +1,170 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eccd4268c173f3c0b14f544088248a7d5ea257aa3058e3dc2a2f15cab1c1405f
-size 10490
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/icon.png' %}" type="image/x-icon">
+
+    <title>Wiskunde</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/" class="logo_mobile"><img src="{% static 'main/images/logo_mobile.png' %}" alt=""></a>
+                <a href="/" class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+                <ul class="menu menu__list--open">
+                    <li class="menu__close">
+                        <button class="menu__close-btn">
+                            <img src="{% static 'main/images/cross.svg' %}" alt="">
+                        </button>
+                    </li>
+                    <li class="menu__list"><a href="{% url 'home' %}" class="menu__link">На Главную</a></li>
+                    <li class="menu__list"><a href="{% url 'contact' %}" class="menu__link">Контакты</a></li>
+                    <li class="menu__list"><a href="{% url 'info' %}" class="menu__link">О нас</a></li>
+                    <li class="menu__list"><a href="{% url 'login' %}" class="menu__link">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="year_curse">
+        <section class="year_curse-top">
+            <div class="container">
+                <div class="year_top-inner">
+                    <div class="year_curse-text-container">
+                        <div class="year_top_inner-container">
+                            <div>
+                                <h1 class="year_top-title">ЛЕТНИЙ КУРС</h1>
+                                <div class="year_top-position">
+                                    <div class="year_top-container-text">
+                                        <p class="year_top-text">Интенсивный курс подготовки к весенним экзаменам
+                                        </p>
+                                    </div>
+                                    <div class="year_top-container-img"><img class="year_curse_ellipse-img"
+                                                                             src="{% static 'main/images/year_curse_ellipse.png' %}"
+                                                                             alt="">
+                                    </div>
+                                </div>
+                                <a class="curse_button-sign-up-text"
+                                   href="https://vk.com/im?media=&sel=-224857793">
+                                    <button class="curse_button-sign-up summer_curse_button-sign-up">Записаться
+                                        на курс!
+                                    </button>
+                                </a>
+                            </div>
+                            <div><img class="summer_curse_beach-img"
+                                      src="{% static 'main/images/summer_curse_beach.png' %}" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="year_curse-question">
+            <div class="container">
+                <div class="year_curse-question-container">
+                    <div class="summer__curse-question-text-inner">
+                        <div class="year__curse-question-wrapper">
+                            <h1 class="year__curse-question-title">Летний курс - оптимальное решение для интенсивной
+                                подготовки</h1>
+                            <p class="year__curse-question-text">Целых 3 месяца (июнь - август) ребята будут
+                                интенсивно готовиться к весенним экзаменам, плавно войдут в увлекательный мир
+                                математики. Не только лекционные занятия с педагогом, но и интерактивные уроки с
+                                увлекательными заданиями, что, безусловно, пробудит у ребенка интерес к математике и
+                                не даст заскучать летом</p>
+                        </div>
+                    </div>
+                    <div class="year__curse-question-img-inner">
+                        <img class="summer_curse_sun-img" src="{% static 'main/images/summer_curse_sun.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="year_course_components">
+            <div class="container">
+                <div class="year_curse_components-inner">
+                    <h1 class="year_curse_components-title">Из чего состоит курс</h1>
+                    <div class="year_curse_components-inner-grid">
+                        <div class="year_curse_components-grid-left">
+                            <h1 class="year_curse-interactive-block-text">ИНТЕРАКТИВНЫЙ БЛОК</h1>
+                            <div class="create-line"></div>
+                            <p class="year_curse-comments">Возможность не пропускать ни одного занятия, так как
+                                всегда можно подключиться к трансляции или посмотреть видеозапись урока в случае
+                                полного отсутствия</p>
+                            <div class="create-line"></div>
+                            <div class="create-line block-line-two"></div>
+                            <p class="year_curse-comments">Домашние задание и обратная связь от педагога, благодаря
+                                чему прогресс будет виден с первых занятий </p>
+                            <div class="create-line block-line-four"></div>
+                            <h1 class="year_curse-interactive-block-text year_curse-interactive-block-text-two">
+                                ОЖИДАЕМЫЙ РЕЗУЛЬТАТ</h1>
+                        </div>
+                        <div class="year_curse_components-grid-center">
+                            <div><img class="year_curse_line-img" src="{% static 'main/images/summer_curse_line.png' %}"
+                                      alt=""></div>
+                            <div><img class="year_curse_line_mobile-img"
+                                      src="{% static 'main/images/year_curse_line_mobile.png' %}"
+                                      alt=""></div>
+                        </div>
+                        <div class="year_curse_components-grid-right">
+                            <div class="create-line block-line-six"></div>
+                            <p class="year_curse-comments">Поиск нестандартных подходов к решению задач как
+                                обычного, так и повышенного уровня, осваивание быстрого счета
+                            </p>
+                            <div class="create-line block-line-seven"></div>
+                            <h1 class="year_curse-interactive-block-text">ЛЕКЦИОННЫЙ БЛОК</h1>
+                            <div class="create-line"></div>
+                            <p class="year_curse-comments">Готовый материал со всей необходимой информацией и
+                                подборка инструментов, помогающих концентрации и запоминанию информации</p>
+                            <div class="create-line"></div>
+                        </div>
+
+                    </div>
+                    <div class="year_curse-result">
+                        <p class="year_curse-result-text">Курс идеально подойдёт, чтобы получить хорошую базу для
+                            экзаменов и нашего Годового курса, комплексно улучшить уровень знаний и увлечь ребенка
+                            математикой.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="index__footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-inner-container">
+                    <div class="footer-contact">
+                        <p class="footer-title">Контакты</p>
+                        <p class="footer-text">8 (925) 458-47-77</p>
+                        <p class="footer-text">manager@wiskunde.ru</p>
+                    </div>
+                    <div class="footer-links">
+                        <p class="footer-title">Ссылки</p>
+                        <p class="footer-text"><a href="https://vk.com/mathwiskunde">vk.com/mathwiskunde</a></p>
+                        <p class="footer-text"><a href="https://t.me/MathWiskunde">@MathWiskunde</a></p>
+                    </div>
+                </div>
+                <div class="footer-line"></div>
+                <p class="copyright">© 2024</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://vk.com/im?media=&sel=-224857793" target="_blank" rel="nofollow">
+        <span class="whatsapp-button"></span>
+    </a>
+</div>
+
+<script src="{% static 'main/js/main.js' %}"></script>
+</body>
+
+</html>

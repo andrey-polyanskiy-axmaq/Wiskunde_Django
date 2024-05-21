@@ -1,3 +1,58 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d331d77a438704277118a061316042f559e183868fb99becd9051a2be85bf185
-size 2428
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'user/css/login.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/icon.png' %}" type="image/x-icon">
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/" class="logo_mobile"><img src="{% static 'main/images/logo_mobile.png' %}" alt=""></a>
+                <a href="/" class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+                <ul class="menu menu__list--open">
+                    <li class="menu__close">
+                        <button class="menu__close-btn">
+                            <img src="{% static 'main/images/cross.svg' %}" alt="">
+                        </button>
+                    </li>
+                    <li class="menu__list"><a href="{% url 'home' %}" class="menu__link">На главную</a></li>
+                    <li class="menu__list"><a href="{% url 'contact' %}" class="menu__link">Контакты</a></li>
+                    <li class="menu__list"><a href="{% url 'info' %}" class="menu__link">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <div class="form-wrapper">
+            <div class="login-header">
+                <h1 class="login-head-text">Вход</h1>
+            </div>
+            <!-- Отображение сообщения об ошибке, если оно существует -->
+            {% if error %}
+            <div class="error-message">{{ error }}</div>
+            {% endif %}
+            <form action="." method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>

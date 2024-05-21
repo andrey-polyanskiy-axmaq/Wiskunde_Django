@@ -1,3 +1,176 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c82eb955b6eaaca062ea01a1f4f4a1879a1daab4ff41ef82cb0b95f833124c4
-size 10343
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/icon.png' %}" type="image/x-icon">
+
+    <title>Wiskunde</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/" class="logo_mobile"><img src="{% static 'main/images/logo_mobile.png' %}" alt=""></a>
+                <a href="/" class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+                <ul class="menu menu__list--open">
+                    <li class="menu__close">
+                        <button class="menu__close-btn">
+                            <img src="{% static 'main/images/cross.svg' %}" alt="">
+                        </button>
+                    </li>
+                    <li class="menu__list"><a href="{% url 'home' %}" class="menu__link">На Главную</a></li>
+                    <li class="menu__list"><a href="{% url 'contact' %}" class="menu__link">Контакты</a></li>
+                    <li class="menu__list"><a href="{% url 'info' %}" class="menu__link">О нас</a></li>
+                    <li class="menu__list"><a href="{% url 'login' %}" class="menu__link">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="year_curse">
+        <section class="year_curse-top">
+            <div class="container">
+                <div class="year_top-inner">
+                    <div class="year_curse-text-container">
+                        <div class="year_top_inner-container">
+                            <div>
+                                <h1 class="year_top-title">ГОДОВОЙ КУРС</h1>
+                                <div class="year_top-position">
+                                    <div class="year_top-container-text">
+                                        <p class="year_top-text">Интенсивный курс подготовки к весенним экзаменам
+                                        </p>
+                                    </div>
+                                    <div class="year_top-container-img"><img class="year_curse_ellipse-img"
+                                                                             src="{% static 'main/images/year_curse_ellipse.png' %}"
+                                                                             alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div><img class="year_curse_ice-img" src="{% static 'main/images/year_curse_ice.png' %}"
+                                      alt=""></div>
+                        </div>
+                        <a class="curse_button-sign-up-text"
+                           href="https://vk.com/im?media=&sel=-224857793">
+                            <button class="curse_button-sign-up">Записаться
+                                на курс!
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="year_curse-question">
+            <div class="container">
+                <div class="year_curse-question-container">
+                    <div class="year__curse-question-text-inner">
+                        <div class="year__curse-question-wrapper">
+                            <h1 class="year__curse-question-title">Как преподнести ребенку материал повышенного
+                                уровня по математике, чтобы он не
+                                потерял
+                                интерес?</h1>
+                            <p class="year__curse-question-subtitle">Наш ответ – Годовой курс.</p>
+                            <p class="year__curse-question-text">Он включает в себя 9 месяцев (сентябрь - май)
+                                интенсивной очной подготовки для
+                                учеников 4
+                                класса в Wiskunde для успешного и легкого поступления в 2007 школу.</p>
+                        </div>
+                    </div>
+                    <div class="year__curse-question-img-inner">
+                        <img class="year_curse_stars-img" src="{% static 'main/images/year_curse_stars.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="year_course_components">
+            <div class="container">
+                <div class="year_curse_components-inner">
+                    <h1 class="year_curse_components-title">Из чего состоит курс</h1>
+                    <div class="year_curse_components-inner-grid">
+                        <div class="year_curse_components-grid-left">
+                            <h1 class="year_curse-interactive-block-text">ИНТЕРАКТИВНЫЙ БЛОК</h1>
+                            <div class="create-line"></div>
+                            <p class="year_curse-comments">Подход к решению задачи как к игре, а система бонусов
+                                бонусов позволяет обменивать
+                                баллы
+                                за решенные задачи на призы</p>
+                            <div class="create-line"></div>
+                            <div class="create-line block-line-two"></div>
+                            <p class="year_curse-comments">Комментации и пояснения под каждой работой, примеры
+                                грамотного оформления задач</p>
+                            <div class="create-line block-line-four"></div>
+                            <h1 class="year_curse-interactive-block-text year_curse-interactive-block-text-two">
+                                ОЖИДАЕМЫЙ РЕЗУЛЬТАТ</h1>
+                        </div>
+                        <div class="year_curse_components-grid-center">
+                            <div><img class="year_curse_line-img" src="{% static 'main/images/year_curse_line.png' %}"
+                                      alt=""></div>
+                            <div><img class="year_curse_line_mobile-img"
+                                      src="{% static 'main/images/year_curse_line_mobile.png' %}"
+                                      alt=""></div>
+                        </div>
+                        <div class="year_curse_components-grid-right">
+                            <div class="create-line block-line-six"></div>
+                            <p class="year_curse-comments">Избавление от шаблонного мышления и развитие
+                                “математического” образа мыслей
+                            </p>
+                            <div class="create-line block-line-seven"></div>
+                            <h1 class="year_curse-interactive-block-text">ЛЕКЦИОННЫЙ БЛОК</h1>
+                            <div class="create-line"></div>
+                            <p class="year_curse-comments">Готовый материал со всей необходимой информацией и
+                                подборка инструментов, помогающих
+                                концентрации и запоминанию информации </p>
+                            <div class="create-line"></div>
+                        </div>
+
+                    </div>
+                    <div class="year_curse-result"><p class="year_curse-result-text">Наш курс гарантирует прохождение
+                        всех тем, а также отработку материала, благодаря решению
+                        заданий из письменного и устного экзаменов.
+                        Мы научим ребят быстрому счету, логике, нестандартным подходам к решению задач повышенного
+                        уровня и их правильному оформлению.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<footer class="index__footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-inner-container">
+                <div class="footer-contact">
+                    <p class="footer-title">Контакты</p>
+                    <p class="footer-text">8 (925) 458-47-77</p>
+                    <p class="footer-text">manager@wiskunde.ru</p>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-title">Ссылки</p>
+                    <p class="footer-text"><a href="https://vk.com/mathwiskunde">vk.com/mathwiskunde</a></p>
+                    <p class="footer-text"><a href="https://t.me/MathWiskunde">@MathWiskunde</a></p>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <p class="copyright">© 2024</p>
+        </div>
+    </div>
+</footer>
+<a href="https://vk.com/im?media=&sel=-224857793" target="_blank" rel="nofollow">
+    <span class="whatsapp-button"></span>
+</a>
+
+
+<script src="{% static 'main/js/main.js' %}"></script>
+</body>
+
+</html>

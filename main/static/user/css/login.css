@@ -1,3 +1,114 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2a505bc1d74789f42c4733cf236ab65f4aab1401d4347ac518a167568b445507
-size 1914
+.login-container {
+    width: 80%;
+    max-width: 300px;
+    margin: 1vw auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.1vw solid #ddd;
+    border-radius: 3em;
+    border-color: rgba(28, 78, 176, 1);
+    position: relative;
+}
+
+.login-header {
+    font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    background-color: rgba(234, 234, 234, 1);
+    border: none;
+    border-radius: 3em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 50%;
+    padding: 0.5em;
+    background-color: rgba(28, 78, 176, 1);
+    color: #fff;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4em;
+    transition: background-color 0.3s;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+.error-message {
+    color: #ff0000;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+.login-head-text {
+    text-align: center;
+}
+
+.form-control {
+    font-size: 1em;
+}
+
+@media screen {
+    .login-container {
+        padding: 3%;
+        margin-top: 3em;
+    }
+    .login-header {
+        margin-bottom: 2em;
+    }
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #fd0404;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 30px;
+  width: 0;
+  background-color: #4caf50;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-container {
+        padding: 3%;
+        margin-top: 10em;
+    }
+    .login-header {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        padding: 5%;
+        margin-top: 7em;
+    }
+
+    .login-header {
+        margin-bottom: 1.3em;
+
+    }
+}

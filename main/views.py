@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2f243512aa31eaaf65dec4d7561d9116c50781172be92bdc01fa0691d798bbf
-size 409
+from django.shortcuts import render
+
+
+def index(request):
+
+    return render(request, 'main/index.html')
+
+
+def info(request):
+    return render(request, 'main/info.html')
+
+
+def contacts(request):
+    return render(request, 'main/contacts.html')
+
+
+def year_course(request):
+    return render(request, 'main/year_course.html')
+
+def summer_course(request):
+    return render(request, 'main/summer_course.html')
+

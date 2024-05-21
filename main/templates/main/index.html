@@ -1,3 +1,305 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e3f15dcb72d04a97180034ae9ea705b9cfacc8caafbacfe8b360c9b4f0a436f
-size 19717
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'main/images/icon.png' %}" type="image/x-icon">
+
+    <title>Wiskunde</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button class="menu__btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="/" class="logo_mobile"><img src="{% static 'main/images/logo_mobile.png' %}" alt=""></a>
+                <a href="/" class="logo"><img src="{% static 'main/images/logo.png' %}" alt=""></a>
+                <ul class="menu menu__list--open">
+                    <li class="menu__close">
+                        <button class="menu__close-btn">
+                            <img src="{% static 'main/images/cross.svg' %}" alt="">
+                        </button>
+                    </li>
+                    <li class="menu__list"><a href="{% url 'contact' %}" class="menu__link">Контакты</a></li>
+                    <li class="menu__list"><a href="{% url 'info' %}" class="menu__link">О нас</a></li>
+                    <li class="menu__list"><a href="{% url 'login' %}" class="menu__link">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="index__main">
+        <section class="index__top">
+            <div class="container">
+                <div class="top__inner--index">
+                    <h1 class="tittle-index">
+                        Подготовка к поступлению в ФМШ №2007
+                    </h1>
+                    <div class="container__image"><img src="{% static 'main/images/index_books.png' %}" alt=""></div>
+                    <p class="top__text--index">
+                        Наш курс основан на темах, которые используются в экзамене при поступлении в школу. После
+                        полного прохождения курса «Математика. Подготовка к поступлению» вы или же ваш ребёнок
+                        получат
+                        необходимые знания и умения для успешного написания вступительных работ.
+                    </p>
+                </div>
+                <button class="top_button-sign-up">Записаться на занятие</button>
+            </div>
+        </section>
+        <section class="index__course-description">
+            <div class="container">
+                <div class="description__inner-index">
+                    <h1 class="title_description-index">Wiskunde курсы</h1>
+                    <div class="description__inner-index-grid">
+                        <div class="description_summer-curse">
+                            <div class="summer_curse-text">
+                                <p class="description_title-index">Летний курс</p>
+                                <ul class='menu-description'>
+                                    <li class="description-list">Длительность: 3 месяца (июнь - август)</li>
+                                    <li class="description-list">Стоимость: 12 500 руб/мес</li>
+                                    <li class="description-list">Частота занятий: 2 урока в неделю</li>
+                                    <li class="description-list">Время урока: длится 1,5 часа (90 минут)</li>
+                                </ul>
+                                <a href={% url 'summercourse' %}
+                                <button class="description_button-sign-up">Записаться</button>
+                                </a>
+                            </div>
+                            <div class="summer_curse-image">
+                                <img class="beach" src="{% static 'main/images/index_beach.png' %}" alt="">
+                            </div>
+                        </div>
+                        <div class="description__year-curse">
+                            <div class="year_curse-text">
+                                <p class="description_title-index">Годовой курс</p>
+                                <ul class="menu-description">
+                                    <li class="description-list">Длительность: 9 месяцев (сентябрь - май)</li>
+                                    <li class="description-list">Стоимость: 12 500 руб/мес</li>
+                                    <li class="description-list">Частота занятий: 2 урока в неделю</li>
+                                    <li class="description-list">Время урока: длится 1,5 часа (90 минут)</li>
+                                </ul>
+                                <a href={% url 'yearcourse' %}
+                                <button class="description_button-sign-up">Записаться</button>
+                                </a>
+                            </div>
+                            <div class="year_curse-image">
+                                <img class="year" src="{% static 'main/images/index_year.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="index__features">
+            <div class="container">
+                <div class="features_inner-index">
+                    <h1 class="title_description-index">Особенности Wiskunde </h1>
+                    <div class="features_items-grid">
+                        <div class="feature_inner">
+                            <img class="features_image" src="{% static 'main/images/index_item_task.png' %}" alt="">
+                            <p class="features_title">Задачи</p>
+                            <p class="features_text">Курс включает в себя более 300 разнообразных задач,
+                                составленных
+                                самостоятельно.</p>
+                        </div>
+                        <div class="feature_inner">
+                            <img class="features_image" src="{% static 'main/images/index_item_message.png' %}" alt="">
+                            <p class="features_title">Живое общение</p>
+                            <p class="features_text">Все занятия будут проходить очно в специализированном для
+                                учебного
+                                процесса месте.</p>
+                        </div>
+                        <div class="feature_inner">
+                            <div class="feature_inner-grid">
+                                <div><img class="features_image" src="{% static 'main/images/index_item_topic.png' %}"
+                                          alt=""></div>
+                                <div class="ee">
+                                    <p class="features_title">Темы занятий</p>
+                                    <p class="features_text">На занятиях будут разобраны более 10 различных тем,
+                                        которые
+                                        присутствуют в экзамене.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature_inner">
+                            <div class="feature_inner-grid">
+                                <img class="features_image" src="{% static 'main/images/index_item_video.png' %}"
+                                     alt="">
+                                <p class="features_title">Видеофиксация</p>
+                                <p class="features_text">В случае отсутствия на занятии, всегда можно пересмотреть
+                                    видеозапись,
+                                    чтобы не упустить
+                                    важных моментов.</p>
+                            </div>
+                        </div>
+                        <div class="feature_inner">
+                            <img class="features_image" src="{% static 'main/images/index_item_homework.png' %}" alt="">
+                            <p class="features_title">Домашние задания</p>
+                            <p class="features_text">Занятия больше нацелены на живой и активный формат общения,
+                                нежели
+                                на
+                                скучный лекционный
+                                материал.</p>
+                        </div>
+                        <div class="feature_inner">
+                            <img class="features_image" src="{% static 'main/images/index_item_puzzle.png' %}" alt="">
+                            <p class="features_title">Интерактивы</p>
+                            <p class="features_text">Занятия больше нацелены на живой и активный формат общения,
+                                нежели
+                                на
+                                скучный лекционный
+                                материал.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="answers">
+            <div class="container">
+                <div class="answers_inner">
+                    <h1 class="answer-title">Ответы на вопросы</h1>
+                </div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">1.    Ребёнок пропустил экзамены в 2007-ую школу и уже
+                            переходит в 5
+                            класс? Стоит ли ему пройти этот курс?</p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Конечно! Это поможет и при прохождении школьной программы, и при
+                        поступлении в другие
+                        топ-школы, ведь
+                        знания из летнего интенсива - большое преимущество. После курса ребята не будут «заточены»
+                        лишь под
+                        определенные типажи задач, ведь во время занятий развиваются мышление и логика, ребенок
+                        осваивает
+                        математику на повышенном уровне, что поможет ученику решать любые задачи!</p>
+                </div>
+                <div class="line"></div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">2.   Ребёнок раньше не изучал математику повышенного уровня?
+                        </p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Ничего страшного! Наш курс подходит для ребят с любым уровнем знаний,
+                        обучавшихся по любым
+                        учебникам.
+                        Программа построена таким образом, что ученики плавно от более легких тем и задач переходят
+                        к более
+                        сложным.</p>
+                </div>
+                <div class="line"></div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">3.    Не получается присутствовать лично на занятии?</p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Ничего страшного, Wiskunde даёт возможность подключаться трансляции
+                        урока, а также
+                        пересматривать его целиком после окончания.</p>
+                </div>
+                <div class="line"></div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">4.    Ребёнок в 3-м классе. Стоит ли его отдавать на курс?</p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Конечно, стоит, так как заблаговременная подготовка - гарантия
+                        поступления, а также более
+                        плотное закрепление полученных на занятиях навыков.
+                    </p>
+                </div>
+                <div class="line"></div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">5.    Я сомневаюсь, подойдёт ли моему ребёнку этот курс? </p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Наш курс подходит всем, ведь предназначен для ребят с любым уровнем
+                        знаний, обучавшимся по
+                        любым учебникам. Более того, курс выстроен параллельно школьной программе, что способствует
+                        закреплению материала и обеспечивает систематизацию полученных знаний. </p>
+                </div>
+                <div class="line"></div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">6.    Я хочу самостоятельно отслеживать результаты своего
+                            ребенка. </p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Преподаватель гарантирует обратную связь, а также большое количество
+                        домашних заданий и их
+                        своевременную проверку. Вы будете видеть четкие результат и прогресс Вашего ребенка.
+                    </p>
+                </div>
+                <div class="line"></div>
+                <button class="collapsible">
+                    <div class="question-item-container">
+                        <p class="question-item-text">7.    Я боюсь что ребенок потеряет интерес?</p>
+                        <img class="header__btn__logo-test" src="{% static 'main/images/index_arrow.svg' %}">
+                    </div>
+                </button>
+                <div class="content">
+                    <p class="answer-item-text">Наш курс интерактивный, ребята изучают математику в увлекательном для их
+                        возраста формате.
+                        Также у нас есть бонусная система: ребёнок решил на курсе очередную задачку - получил баллы.
+                        Накопленные баллы можно будет обменять на определённый приз, который ученик выберет сам. Чем
+                        лучше приз, тем больше баллов для него надо. Это будет мотивировать ребят больше стараться и
+                        решать больше задач!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="index__footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-inner-container">
+                    <div class="footer-contact">
+                        <p class="footer-title">Контакты</p>
+                        <p class="footer-text">8 (925) 458-47-77</p>
+                        <p class="footer-text">manager@wiskunde.ru</p>
+                        <p class="footer-text">Улица Адмирала Руднева, 4</p>
+                    </div>
+                    <div class="footer-links">
+                        <p class="footer-title">Ссылки</p>
+                        <p class="footer-text"><a href="https://vk.com/mathwiskunde">vk.com/mathwiskunde</a></p>
+                        <p class="footer-text"><a href="https://t.me/MathWiskunde">@MathWiskunde</a></p>
+                    </div>
+                </div>
+                <div class="footer-line"></div>
+                <p class="copyright">© 2024</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://vk.com/im?media=&sel=-224857793" target="_blank" rel="nofollow">
+        <span class="whatsapp-button"></span>
+    </a>
+</div>
+<script src="{% static 'main/js/main.js' %}"></script>
+</body>
+
+</html>
